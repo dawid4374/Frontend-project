@@ -1,7 +1,7 @@
 # Frontend-project
 My smartBees website
 
-### the project uses: 
+### The project uses: 
 
 - SASS
 - Webpack,
