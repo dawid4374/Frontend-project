@@ -1,0 +1,242 @@
+.portfolio-nav {
+  .top-nav {
+    display: flex;
+    background-image: url("../img/portfolio_bcg.png");
+    background-size: 100% 100%;
+    height: 130px;
+    justify-content: space-between;
+    color: #ffffff;
+    h1 {
+      margin: auto auto;
+    }
+    .nav-contact {
+      margin: auto auto;
+      a {
+        margin-left: 1rem;
+        color: #ffffff;
+        font-size: 1vw;
+        img {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+  .bottom-nav {
+    display: flex;
+    justify-content: center;
+    background-color: #3c3c3c;
+    padding: 2rem;
+    a {
+      color: #ffffff;
+      margin: auto 2rem;
+    }
+  }
+}
+
+.gallery {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  div {
+    .gallery-img {
+      object-fit: cover;
+      width: 100%;
+      max-height: 100%;
+    }
+  }
+  .contact-box {
+    background-color: #fa7900;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    h2 {
+      font-size: 2vw;
+      color: #ffffff;
+      font-weight: 300;
+      span {
+        font-weight: 600;
+      }
+    }
+    button {
+      margin-top: 2vw;
+      font-size: 1vw;
+      width: 12vw;
+      height: 3vw;
+      background-color: $white-color;
+      border-color: $white-color;
+      color: #fa7900;
+    }
+  }
+  .shops-box {
+    background-color: #434343;
+    color: #ffffff;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    position: relative;
+    h2 {
+      font-size: 2vw;
+      margin-top: 2rem;
+      img {
+        margin-top: -3rem;
+        margin-right: -0.5rem;
+      }
+    }
+    p {
+      font-size: 1vw;
+    }
+    a {
+      margin-right: 1rem;
+      color: #ffffff;
+      font-size: 1vw;
+      span {
+        opacity: 0.5;
+      }
+    }
+    #shop-card-link {
+      position: absolute;
+      right: 0;
+      margin-top: 2vw;
+      img {
+        margin-left: 0.5rem;
+        object-fit: cover;
+        width: 15%;
+        max-height: 20%;
+      }
+    }
+  }
+  .gallery-icons {
+    a {
+      img {
+        object-fit: cover;
+        width: 25%;
+        max-height: 35%;
+      }
+    }
+  }
+}
+
+.show-more {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  button {
+    border-color: #fa7900;
+    color: #fa7900;
+    background-color: $white-color;
+    width: 317px;
+    height: 64px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .portfolio-nav {
+    .top-nav {
+      display: block;
+      background-image: none;
+      height: unset;
+      h1 {
+        background-color: #fa7900;
+        text-align: center;
+        padding: 1rem;
+      }
+      .nav-contact {
+        background-color: #f8b013;
+        text-align: center;
+        height: 130px;
+        a {
+          display: block;
+          font-size: 1em;
+          padding: 1rem;
+        }
+      }
+    }
+    .bottom-nav {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 1rem;
+      a {
+        margin: 1rem auto;
+        width: 5rem;
+      }
+    }
+  }
+  .gallery {
+    display: block;
+    .contact-box {
+      width: 100%;
+      padding-left: 0;
+      position: relative;
+      padding-top: 100%;
+      text-align: center;
+      img {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -80%);
+      }
+      h2 {
+        font-size: 8vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      button {
+        font-size: 1rem;
+        width: 230px;
+        height: 54px;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+        position: absolute;
+      }
+    }
+    .shops-box {
+      width: 100%;
+      padding-left: 0;
+      position: relative;
+      padding-top: 100%;
+      text-align: center;
+      h2 {
+        position: absolute;
+        width: 100%;
+        font-size: 8vw;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -80%);
+      }
+      p {
+        position: absolute;
+        font-size: 4vw;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      #shop-card-link {
+        display: none;
+      }
+      .gallery-icons {
+        #icon-left {
+          position: absolute;
+          top: 70%;
+          left: 35%;
+          transform: translate(-65%, -30%);
+        }
+        #icon-right {
+          position: absolute;
+          top: 70%;
+          left: 65%;
+          transform: translate(-35%, -30%);
+        }
+        img {
+          width: 80%;
+        }
+      }
+    }
+  }
+  .show-more {
+    button {
+      width: 14em;
+      height: 4em;
+    }
+  }
+}
